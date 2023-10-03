@@ -63,6 +63,8 @@ public class GeneralChatController {
 
             // First, send room number
             out.println(roomNumber);
+            String username = (Session.getCurrentUser() != null) ? Session.getCurrentUser() : "Anónimo";
+            out.println(username);
             // Handle sending messages
             sendButton.setOnAction(e -> sendMessage());
 
@@ -86,9 +88,13 @@ public class GeneralChatController {
 
     private void sendMessage() {
         if (out != null && !inputField.getText().trim().isEmpty()) {
-            String username = (Session.getCurrentUser() != null) ? Session.getCurrentUser() : "Anónimo";
-            String message = username + ": " + inputField.getText();
-            out.println(message);
+            if (inputField.getText().trim().equals("/users")) {
+                out.println("/getUsers:" + roomNumber);
+            } else {
+                String username = (Session.getCurrentUser() != null) ? Session.getCurrentUser() : "Anónimo";
+                String message = username + ": " + inputField.getText();
+                out.println(message);
+            }
             inputField.clear();
         }
     }
