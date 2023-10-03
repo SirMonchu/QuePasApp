@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.shape.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.SalasController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="400.0" layoutX="297.0" stroke="BLACK" strokeType="INSIDE" width="6.0" />
+      <Button fx:id="NewChatbtt" layoutX="82.0" layoutY="217.0" mnemonicParsing="false" onAction="#CreateNewChat" prefHeight="46.0" prefWidth="146.0" style="-fx-background-color: #008000;" text="New Chat" textFill="WHITE" />
+      <Button fx:id="Joinbtt" layoutX="394.0" layoutY="217.0" mnemonicParsing="false" onAction="#JoinGeneral" prefHeight="46.0" prefWidth="121.0" style="-fx-background-color: #008000;" text="Join" textFill="WHITE" />
+      <Text fill="#43b543" layoutX="371.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chat General">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

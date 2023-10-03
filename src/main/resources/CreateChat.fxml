@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="295.0" prefWidth="469.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CreateChatController">
+   <children>
+      <Button fx:id="Createbtt" layoutX="202.0" layoutY="199.0" mnemonicParsing="false" onAction="#CreateChat" style="-fx-background-color: #008000;" text="Create" textFill="WHITE" />
+      <TextField fx:id="NewChatNametxt" layoutX="97.0" layoutY="132.0" prefHeight="19.0" prefWidth="274.0" />
+   </children>
+</AnchorPane>
