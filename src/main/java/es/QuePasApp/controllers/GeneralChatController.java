@@ -1,4 +1,4 @@
-package controllers;
+package es.QuePasApp.controllers;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.TextArea;
@@ -35,6 +35,7 @@ public class GeneralChatController {
 
     public void initialize() {
         connectToServer();
+        inputField.setOnAction(e -> sendMessage());
     }
 
     private void connectToRoom(int newRoomNumber) {

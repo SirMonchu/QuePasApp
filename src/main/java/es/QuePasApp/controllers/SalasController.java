@@ -1,4 +1,4 @@
-package controllers;
+package es.QuePasApp.controllers;
 
 import java.io.IOException;
 
@@ -38,7 +38,6 @@ public class SalasController {
             stage.showAndWait();
         } catch (IOException e) {
             e.printStackTrace();
-            // Aquí puedes mostrar un mensaje de error al usuario si lo deseas
         }
     }
 

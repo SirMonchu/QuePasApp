@@ -7,7 +7,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GeneralChatController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.QuePasApp.controllers.GeneralChatController">
    <children>
       <TextArea fx:id="TextFieldtxt" editable="false" layoutX="229.0" layoutY="44.0" prefHeight="305.0" prefWidth="351.0" />
       <Button layoutY="44.0" mnemonicParsing="false" onAction="#onGeneralRoomButtonPressed" prefHeight="59.0" prefWidth="228.0" text="General Chat" />
@@ -18,14 +18,11 @@
       <Button layoutY="100.0" mnemonicParsing="false" onAction="#onTechRoomButtonPressed" prefHeight="59.0" prefWidth="228.0" text="Tecnologia" />
       <Button mnemonicParsing="false" prefHeight="44.0" prefWidth="96.0" style="-fx-background-color: #008000;" text="Back" textFill="WHITE" />
       <TextField fx:id="inputField" layoutX="229.0" layoutY="349.0" prefHeight="31.0" prefWidth="292.0" style="-fx-background-size: 1200 900: 1; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 2; -fx-border-color: #000000;" />
-      <Button fx:id="sendButton" layoutX="532.0" layoutY="350.0" minWidth="47.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="47.0" style="-fx-background-size: 1200 900; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 5;">
-         <graphic>
-            <ImageView disable="false" fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../java/sources/3106794.png" />
-               </image>
-            </ImageView>
-         </graphic>
-      </Button>
+      <Button fx:id="sendButton" layoutX="532.0" layoutY="350.0" minWidth="47.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="47.0" style="-fx-background-size: 1200 900; -fx-background-radius: 30; -fx-border-radius: 30; -fx-border-width: 5;" />
+      <ImageView disable="false" fitHeight="20.0" fitWidth="20.0" layoutX="549.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../java/sources/3106794.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

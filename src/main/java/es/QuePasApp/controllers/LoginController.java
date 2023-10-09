@@ -1,4 +1,4 @@
-package controllers;
+package es.QuePasApp.controllers;
 
 
 import java.io.IOException;
@@ -27,12 +27,16 @@ public class LoginController {
     }
     public void UserMenu() throws IOException {
     	Session.setCurrentUser(UserNAmetxt.getText());
-        FXMLLoader fxmlLoader = new FXMLLoader(LoginController.class.getResource("/Salas.fxml"));
-        Scene scene = new Scene((Parent)fxmlLoader.load(), 600.0, 400.0);
-        SalasController controlador = (SalasController)fxmlLoader.getController();
-        Stage stage = new Stage();
-        stage.setScene(scene);
-        stage.showAndWait();
+        try {
+            FXMLLoader fxmlLoader = new FXMLLoader(SalasController.class.getResource("/GeneralChat.fxml"));
+            Scene scene = new Scene((Parent) fxmlLoader.load(), 600.0, 400.0);
+            GeneralChatController controlador = (GeneralChatController) fxmlLoader.getController();
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.showAndWait();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
     
 }

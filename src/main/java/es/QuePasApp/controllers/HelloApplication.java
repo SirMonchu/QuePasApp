@@ -1,4 +1,4 @@
-package controllers;
+package es.QuePasApp.controllers;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
