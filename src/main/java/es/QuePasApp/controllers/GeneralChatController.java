@@ -7,6 +7,8 @@ import javafx.scene.input.MouseEvent;
 import javafx.scene.control.Button;
 import java.io.*;
 import java.net.Socket;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 
 import es.QuePasApp.Session;
 
@@ -89,11 +91,14 @@ public class GeneralChatController {
 
     private void sendMessage() {
         if (out != null && !inputField.getText().trim().isEmpty()) {
+            // Obtener la hora actual en formato HH:mm
+            String currentTime = LocalTime.now().format(DateTimeFormatter.ofPattern("HH:mm"));
+            
             if (inputField.getText().trim().equals("/users")) {
                 out.println("/getUsers:" + roomNumber);
             } else {
                 String username = (Session.getCurrentUser() != null) ? Session.getCurrentUser() : "Anónimo";
-                String message = username + ": " + inputField.getText();
+                String message = "[" + currentTime + "] " + username + ": " + inputField.getText();
                 out.println(message);
             }
             inputField.clear();
