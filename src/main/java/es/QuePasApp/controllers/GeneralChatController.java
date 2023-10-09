@@ -119,6 +119,6 @@ public class GeneralChatController {
     }
 
     public void PruebaTexto(MouseEvent mouseEvent) {
-        // This function has been left empty to avoid resetting the TextArea.
+        
     }
 }
